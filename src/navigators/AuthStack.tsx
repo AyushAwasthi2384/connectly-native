@@ -5,15 +5,19 @@ import Login from '../screens/Auth/Login';
 import Register from '../screens/Auth/Register';
 import { Routes } from './RouteNames';
 import Splash from '../screens/Auth/Splash/SplashNewUser';
+import OtpVerification from '../screens/Auth/Otp';
+import AadhaarVerification from '../screens/Auth/Aadhar';
 
 const AuthStackNavigator = createNativeStackNavigator();
 
 const AuthStack = () => {
     return (
-        <AuthStackNavigator.Navigator screenOptions={{ headerShown: false }}>
+        <AuthStackNavigator.Navigator screenOptions={{ headerShown: false }} initialRouteName='Register'>
             <AuthStackNavigator.Screen name="Splash" component={Splash} />
             <AuthStackNavigator.Screen name={Routes.auth.Login} component={Login} />
             <AuthStackNavigator.Screen name={Routes.auth.Register} component={Register} />
+            <AuthStackNavigator.Screen name={Routes.auth.Otp} component={OtpVerification} />
+            <AuthStackNavigator.Screen name={Routes.auth.Aadhaar} component={AadhaarVerification} />
         </AuthStackNavigator.Navigator>
     );
 };
