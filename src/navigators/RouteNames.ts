@@ -4,9 +4,11 @@ export const Routes = {
         Register: "Register",
         Otp: "Otp",
         Aadhaar: "Aadhaar",
+        AadhaarOtp: "AadhaarOtp",
     },
     main: {
         Home: "Home",
         Profile: "Profile",
+        Chat: "Chat",
     },
 };

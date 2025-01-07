@@ -7,7 +7,7 @@ import AuthStack from './src/navigators/AuthStack';
 const RootStack = createNativeStackNavigator();
 
 const App = () => {
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
   return (
     <NavigationContainer>

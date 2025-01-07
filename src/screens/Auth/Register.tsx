@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
         paddingHorizontal: width * 0.05,
     },
     title: {
-        fontSize: 28,
+        fontSize: 32,
         fontWeight: '700',
         color: '#333',
         marginTop: height * 0.08,
